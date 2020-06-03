@@ -25,9 +25,9 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 SECRET_KEY = 'x9o3+7)cxj)575$3o!x*c@^)7*(c&m+*qsoz2oal-!++&vb@z)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 SITE_ID = 1
 
 
