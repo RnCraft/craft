@@ -1,0 +1,47 @@
+{% extends 'main/index.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet"  type="text/css" href="{% static 'css\pravila.css' %}">
+	<section>
+		<div class="allrules">
+			<div class="clearfix">
+				<div class="d-flex justify-content-center">
+				<ul class="nav nav-tabs" style="margin-top:30px; ">
+					<li class="nav-item">
+						<a class="nav-link" href="rules" style="color:#90EE90;">Термины</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="obzhie_pravila" style="color:#90EE90;">Общие правила</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="pravila_dla_donaterov" style="color:#fff; background: #90EE90;">Правила для донатеров</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pravila_stroitelstva" style="color:#90EE90;">Правила строительства</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pravila_administrirovania" style="color:#90EE90;">Правила администрирования</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pravila_obzhenia" style="color:#90EE90;">Правила общения</a>
+					</li>
+				</ul>
+				</div>
+				<div class="d-flex justify-content-center">
+				<div class="rules">
+					<ol>
+						<li><p>Донатер не имеет право кикать, банить, давать мут без причины.</p></li>
+						<li><p>Донатер не имеет право ломать чужие дома даже если они ему не нравятся.</p></li>
+						<li><p>Донатер имеет право проводить раздачи также, как и игрок.</p></li>
+						<li><p>Донатер не имеет право давать бан/кик за гриферство, раздачи, ловушки, зелья, дюп, читы, а также с причиной "за разбаном в скайп", нецензурной лексикой, добавлением в регион и оскорблением игрока.</p></li>
+						<li><p>Телепортация без причины и убийство без разрешения игрока запрещена.</p></li>
+						<li><p>Донатерам запрещено забирать у игроков какие-либо вещи и мешать игровому процессу.</p></li>
+						<li><p>Строго запрещается разбанивать игроков, которых забанили BestMark, Emptiness, SweetAnn.</p></li>
+						<li><p>Попытка нанести вред серверу карается баном навсегда.</p></li>
+					</ol>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

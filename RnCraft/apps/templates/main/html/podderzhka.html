@@ -1,0 +1,17 @@
+{% extends 'main/index.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet"  type="text/css" href="{% static 'css\podderzka.css' %}">
+<link rel="stylesheet"  type="text/css" href="{% static 'css\main.css' %}">
+	<section>
+		<div class="below">
+			<form name="forma1">
+				<h3>Введите свой никнейм</h3>
+				<input type="text" name="name" style="width: 475px;" placeholder="Никнейм">
+				<h3>Опишите свою проблему</h3>
+				<textarea rows="7" style="width: 475px;" placeholder="Проблема"></textarea><br>
+				<input type="button" name="send" value="Отправить" class="send" onclick="proverka();">
+			</form>
+		</div>
+	</section>
+{% endblock %}

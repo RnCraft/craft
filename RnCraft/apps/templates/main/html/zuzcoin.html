@@ -1,0 +1,108 @@
+{% extends "main/index.html" %}
+{% load static %}
+{% block script %}
+	<script language="javascript">
+		function perevod() {
+			var a=1*document.forma1.zuzcoin.value;
+			var b=a*3;
+			document.forma1.rub.value=b;
+		}
+	</script>
+{% endblock %}
+{% block content %}
+<link rel="stylesheet"  type="text/css" href="{% static 'css\main.css' %}">
+	<section>
+		<div class="below">
+			<ol class="clearfix">
+				<li>
+					<a href="index">
+						<p class="below2">Привилегии</p>
+					</a>
+				</li>
+				<li>
+					<a href="keysi">
+						<p class="below2">Кейсы</p>
+					</a>
+				</li>
+				<li>
+					<a href="razban">
+						<p class="below2">Разбан</p>
+					</a>
+				</li>
+				<li>
+					<a href="zuzcoin">
+						<p class="below1">Зускоин</p>
+					</a>
+				</li>
+			</ol>
+			<form name="forma1">
+				<table>
+					<tr>
+						<td colspan="3"><h3>Введите никнейм</h3></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input type="text" name="name" style="width: 475px;" placeholder="Никнейм"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><h3>Введите количество зускоинов</h3></td>
+					</tr>
+					<tr>
+						<td>Р</td><td><input type="text" name="zuzcoin" size="6"></td><td><input type="button" class="per" value="Перевести" onclick="perevod();"></td>
+					</tr>
+					<tr>
+						<td>Ƶ</td><td><input type="text" name="rub" size="6"></td><td><input type="reset" class="clear" value="Очистить"></td>
+					</tr>
+				</table>
+				<input type="checkbox" name="soglasie">Подтверждаю свое согласие со всеми <a href="rules.html" style="text-decoration: none; color: #007aff;">правилами</a> проекта<br>
+				<td colspan="3"><input type="button" name="buy" class="buy" value="Купить" onClick="proverka();"></td>				
+			</form>
+		</div>
+		<div class="belo">
+			<h3 align="center">Последние покупки</h3>
+			<div class="clearfix">
+				<div class="beloi">
+					<table>
+						<tr>
+							<td>
+								<img src="{% static 'img/face1.jpg' %}" class="face">
+							</td>
+							<td class="boi">
+								<h3 style="margin-left: 20px;">kirill__fanta</h3>
+								<img src="{% static 'img/buy.jpg' %}" style="margin-left: 20px;"><span>Спонсор</span><br>
+								<img src="{% static 'img/clock.jpg' %}" style="margin-left: 20px;"><span>10.05.2020 в 08:24</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="beloi">
+					<table>
+						<tr>
+							<td>
+								<img src="{% static 'img/face2.jpg' %}" class="face">
+							</td>
+							<td class="boi">
+								<h3 style="margin-left: 20px;">Daykk</h3>
+								<img src="{% static 'img/buy.jpg' %}" style="margin-left: 20px;"><span>Админ</span><br>
+								<img src="{% static 'img/clock.jpg' %}" style="margin-left: 20px;"><span>10.05.2020 в 07:03</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="beloi">
+					<table>
+						<tr>
+							<td>
+								<img src="{% static 'img/face3.jpg' %}" class="face">
+							</td>
+							<td class="boi">
+								<h3 style="margin-left: 20px;">yungdimka12</h3>
+								<img src="{% static 'img/buy.jpg' %}" style="margin-left: 20px;"><span>Хелпер</span><br>
+								<img src="{% static 'img/clock.jpg' %}" style="margin-left: 20px;"><span>10.05.2020 в 06:28</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

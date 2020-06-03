@@ -1,0 +1,253 @@
+body {
+	background: url(../img/background.jpg);
+	font-family: "Arial", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	width: 1250px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	background: #353a40;
+	font-size: 25px;
+	height: 60px;
+	margin-top: 15px;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	height: 60px;
+	width: 60px;
+	float: left;
+}
+
+.logo p {
+	float: left;
+	color: lime;
+	margin-top: 17.5px;
+}
+
+.first {
+	margin-left: 200px;
+}
+
+header ol li {
+	list-style-type: none;
+	float: left;
+	margin-left: 100px;
+	margin-top: -8px;
+}
+
+header ol li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header ol li a:hover {
+	color: #a1a1a1;
+}
+
+header ul {
+	background: #fff;
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	position: absolute;
+	display: none;
+	margin-top: -20px;
+	padding: 5px 0;
+}
+
+header ul>li {
+	list-style-type: none;
+	float: none;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+header ul>li p {
+	color: #676767;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px;
+	padding: 3px 6px;
+}
+
+.top:hover ul {
+	display: block;
+}
+
+header ul>li p:hover {
+	color: #acacac;
+}
+
+.below {
+	background: #fff;
+	border-radius: 50px;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.below li {
+	float: left;
+	margin-left: 40px;
+	list-style-type: none;
+	border: 2px #fff solid;
+}
+
+.below li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.below1 {
+	background: #90EE90;
+	color: #fff;
+	border: 2px #90EE90;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.below2 {
+	color: #90EE90;
+	border: 2px #fff solid;
+	padding: 10px;
+}
+
+.below2:hover {
+	color: #90EE90;
+	border: 2px #fff solid;
+	padding: 10px;
+}
+
+section form {
+	margin-top: 10px;
+	margin-left: 90px;
+}
+
+section form input, section form select {
+	font-size: 17px;
+	padding: 10px;
+	border: 2px #90EE90 solid;
+	border-radius: 8px;
+}
+
+section form input:hover, section form select:hover {
+	border: 2px #90EE90 solid;
+}
+
+.soglasie {
+	margin-top: 10px;
+}
+
+.buy, .per, .clear {
+	background: #fff;
+	color: #61be4f;
+	font-size: 20px;
+	text-align: center;
+	width: 100px;
+	border: 2px #61be4f solid;
+	border-radius: 20px;
+	padding: 15px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.per, .clear {
+	width: 140px;
+	margin-left: -300px;
+}
+
+.buy:hover, .per:hover, .clear:hover {
+	background: #61be4f;
+	color: #fff;
+	border: 2px #61be4f solid;
+}
+
+.belo {
+	background: #fff;
+	border-radius: 50px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 30px;
+	width: 80%;
+}
+
+.beloi {
+	float: left;
+	border: 2px#90EE90 solid;
+	border-radius: 20px;
+	padding:25px;
+}
+
+.beloi:hover {
+	border: 2px #90EE90 solid;
+}
+
+.face {
+	height: 150px;
+	width: 150px;
+}
+
+.boi img {
+	width: 15px;
+	height: 15px;
+}
+
+.beloi:last-child {
+	float: right;
+}
+
+.beloi:nth-child(2) {
+	margin-left: 90px;
+}
+
+footer {
+	background: #353a40;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 370px;
+}
+
+footer p {
+	color: #fff;
+	font-size: 20px;
+	float: left;
+	padding: 25px;
+	margin: 0px;
+}
+
+footer ol {
+	float: right;
+}
+
+footer ol li {
+	list-style-type: none;
+	float: right;
+	margin-right: 25px;
+}
+
+footer ol li a {
+	color: #fff;
+}
+
+footer ol li a img {
+	width: 35px;
+	height: 35px;
+	margin-top: 3px;
+}

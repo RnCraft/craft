@@ -1,0 +1,47 @@
+{% extends 'main/index.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet"  type="text/css" href="{% static 'css\pravila.css' %}">
+	<section>
+		<div class="allrules">
+			<div class="clearfix"><div class="d-flex justify-content-center">
+				<ul class="nav nav-tabs" style="margin-top:30px; ">
+					<li class="nav-item">
+						<a class="nav-link" href="rules" style="color:#90EE90;">Термины</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="obzhie_pravila"style="color:#90EE90;">Общие правила</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pravila_dla_donaterov"style="color:#90EE90;">Правила для донатеров</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="pravila_stroitelstva" style="color:#fff; background: #90EE90;">Правила строительства</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pravila_administrirovania" style="color:#90EE90;">Правила администрирования</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pravila_obzhenia" style="color:#90EE90;">Правила общения</a>
+					</li>
+				</ul>
+				</div>
+				<div class="d-flex justify-content-center">
+				<div class="rules">
+					<ol>
+						<li><p>Запрещено гриферить.</p></li>
+						<li><p>Запрещены любые механизмы влияющие на скорость работы сервера (в том числе клок-генераторы).</p></li>
+						<li><p>Запрещено строительство:</p></li>
+						<ol>
+							<li><p>Американских горок.</p></li>
+							<li><p>Коробок из любых материалов.</p></li>
+							<li><p>Построек с сексуальным контекстом.</p></li>
+						</ol>
+						<li><p>Недостроенные постройки удаляются.</p></li>
+					</ol>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

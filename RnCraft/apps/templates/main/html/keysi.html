@@ -1,0 +1,95 @@
+{% extends 'main/index.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet"  type="text/css" href="{% static 'css\main.css' %}">
+	<section>
+		<div class="below">
+			<ol class="clearfix">
+				<li>
+					<a href="index">
+						<p class="below2">Привилегии</p>
+					</a>
+				</li>
+				<li>
+					<a href="keysi">
+						<p class="below1">Кейсы</p>
+					</a>
+				</li>
+				<li>
+					<a href="razban">
+						<p class="below2">Разбан</p>
+					</a>
+				</li>
+				<li>
+					<a href="zuzcoin">
+						<p class="below2">Зускоин</p>
+					</a>
+				</li>
+			</ol>
+			<form name="forma1">
+				<h3>Введите никнейм</h3>
+				<input type="text" name="name" style="width: 475px;" placeholder="Никнейм">
+				<h3>Выберите кейс</h3>
+				<select style="width: 500px;">
+					<option><p>1 кейс с донатом - 29Р</p></option>
+					<option><p>3 кейса с донатом - 69Р</p></option>
+					<option><p>5 кейсов с донатом - 99Р</p></option>
+					<option><p>10 кейсов с донатом - 169Р</p></option>
+				</select>
+				<h3>Введите промо-код (если есть)</h3>
+				<input type="text" name="promokod" placeholder="Промо-код" style="width: 475px;"><br>
+				<div class="soglasie">
+					<input type="checkbox" name="soglasie">Подтверждаю свое согласие со всеми <a href="rules.html" style="text-decoration: none; color: #007aff;">правилами</a> проекта
+				</div>
+				<input type="button" name="buy" class="buy" value="Купить" onClick="proverka();">
+			</form>
+		</div>
+		<div class="belo">
+			<h3 align="center">Последние покупки</h3>
+			<div class="clearfix">
+				<div class="beloi">
+					<table>
+						<tr>
+							<td>
+								<img src="{% static 'img/face1.jpg' %}" class="face">
+							</td>
+							<td class="boi">
+								<h3 style="margin-left: 20px;">kirill__fanta</h3>
+								<img src="{% static 'img/buy.jpg' %}" style="margin-left: 20px;"><span>Спонсор</span><br>
+								<img src="{% static 'img/clock.jpg' %}" style="margin-left: 20px;"><span>10.05.2020 в 08:24</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="beloi">
+					<table>
+						<tr>
+							<td>
+								<img src="{% static 'img/face2.jpg' %}" class="face">
+							</td>
+							<td class="boi">
+								<h3 style="margin-left: 20px;">Daykk</h3>
+								<img src="{% static 'img/buy.jpg' %}" style="margin-left: 20px;"><span>Админ</span><br>
+								<img src="{% static 'img/clock.jpg' %}" style="margin-left: 20px;"><span>10.05.2020 в 07:03</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="beloi">
+					<table>
+						<tr>
+							<td>
+								<img src="{% static 'img/face3.jpg' %}" class="face">
+							</td>
+							<td class="boi">
+								<h3 style="margin-left: 20px;">yungdimka12</h3>
+								<img src="{% static 'img/buy.jpg' %}" style="margin-left: 20px;"><span>Хелпер</span><br>
+								<img src="{% static 'img/clock.jpg' %}" style="margin-left: 20px;"><span>10.05.2020 в 06:28</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

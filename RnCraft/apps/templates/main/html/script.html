@@ -1,0 +1,20 @@
+{% block script %}
+	<script language="javascript">
+		function proverka() {
+			var a=document.forma1.name.value;
+			var b=1*document.forma1.elements[1].checked;
+			if (a.length==0 && b==0) {
+				alert("Введите свой никнейм и подтвердите свое согласие с правилами проекта");
+			}
+			else {
+				if (a.length==0){
+					alert("Введите свой никнейм");
+				}
+				if (b==0) {
+					alert("Подтвердите свое согласие с правилами проекта");
+				}
+			}
+
+		}
+	</script>
+{% endblock %}

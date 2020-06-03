@@ -1,0 +1,177 @@
+body {
+	background: url(../img/background.jpg);
+	font-family: "Arial", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	width: 1250px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	background: #353a40;
+	font-size: 25px;
+	height: 60px;
+	margin-top: 15px;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	height: 60px;
+	width: 60px;
+	float: left;
+}
+
+.logo p {
+	float: left;
+	color: lime;
+	margin-top: 17.5px;
+}
+
+.first {
+	margin-left: 200px;
+}
+
+header ol li {
+	list-style-type: none;
+	float: left;
+	margin-left: 60px;
+	margin-top: -8px;
+}
+
+header ol li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header ol li a:hover {
+	color: #a1a1a1;
+}
+
+header ul {
+	background: #fff;
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	position: absolute;
+	display: none;
+	margin-top: -20px;
+	padding: 5px 0;
+}
+
+header ul>li {
+	list-style-type: none;
+	float: none;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+header ul>li p {
+	color: #676767;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px;
+	padding: 3px 6px;
+}
+
+.top:hover ul {
+	display: block;
+}
+
+header ul>li p:hover {
+	color: #acacac;
+}
+
+.allrules {
+	background: #fff;
+	width: 80%;
+	border-radius: 30px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.menurules {
+	float: left;
+	width: 30%;
+	position: relative;
+}
+
+.menurules ol {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.rules {
+	float: right;
+	width: 50%;
+	position: relative;
+	margin: 0;
+}
+
+.menurules ol li {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.menurules ol li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menurules ol li p {
+	border: 2px #fff solid;
+	color: #58a4ff;
+	width: 200px;
+	padding: 10px;
+}
+
+.menurules ol li p:hover {
+	color: #0074ff;
+}
+
+footer {
+	background: #353a40;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 350px;
+}
+
+footer p {
+	color: #fff;
+	font-size: 20px;
+	float: left;
+	padding: 25px;
+	margin: 0px;
+}
+
+footer ol {
+	float: right;
+}
+
+footer ol li {
+	list-style-type: none;
+	float: right;
+	margin-right: 25px;
+}
+
+footer ol li a {
+	color: #fff;
+}
+
+footer ol li a img {
+	width: 35px;
+	height: 35px;
+	margin-top: 3px;
+}
